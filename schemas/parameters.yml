@@ -1,0 +1,6 @@
+parameters:
+  player_id:
+    name: player_id
+    in: path
+    required: true
+    type: integer

@@ -1,0 +1,54 @@
+{
+  "name": "api-tennis-player-stats",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Api to get tennis players stats",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "npm run build && npm run start | bunyan",
+    "fix-lint": "tslint --fix --project tsconfig.json",
+    "lint": "tslint --project tsconfig.json",
+    "precommit": "npm run lint",
+    "prepush": "npm run lint",
+    "start": "node lib/index.js",
+    "test": "NODE_ENV=test ALLOW_CONFIG_MUTATIONS=1 mocha --exit ./tests",
+    "version": "chlg release $npm_package_version && git add CHANGELOG.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sachavent/api-tennis-player-stats.git"
+  },
+  "keywords": [
+    "api",
+    "tennis",
+    "player",
+    "stats"
+  ],
+  "author": "sachavent",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sachavent/api-tennis-player-stats/issues"
+  },
+  "homepage": "https://github.com/Sachavent/api-tennis-player-stats#readme",
+  "dependencies": {
+    "ajv": "^6.5.2",
+    "config": "^1.30.0",
+    "restify": "^7.2.1",
+    "restify-errors": "^6.1.1"
+  },
+  "devDependencies": {
+    "@types/config": "0.0.33",
+    "@types/node": "^10.5.1",
+    "@types/restify": "^7.2.3",
+    "@types/restify-errors": "^4.3.3",
+    "chai": "^4.2.0",
+    "chlg-cli": "^1.0.0",
+    "husky": "^1.0.0-rc.10",
+    "mocha": "^6.2.0",
+    "request": "^2.88.0",
+    "tslint": "^5.10.0",
+    "tslint-eslint-rules": "^5.3.1",
+    "typescript": "^2.9.2"
+  }
+}
