@@ -1,0 +1,37 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+      "tslint:recommended",
+      "tslint-eslint-rules"
+  ],
+  "jsRules": {
+  },
+  "rules": {
+      "only-arrow-functions": false,
+      "space-before-function-paren": false,
+      "trailing-comma": false,
+      "interface-name": false,
+      "no-console": true,
+      "no-duplicate-variable": true,
+      "no-var-requires": false,
+      "no-angle-bracket-type-assertion": false,
+      "object-literal-key-quotes": false,
+      "object-literal-sort-keys": false,
+      "max-line-length": false,
+      "typedef-whitespace": false,
+      // Using tslint-eslint-rules extension to handle indentation
+      "ter-indent": [true, 2],
+      "align": true,
+      "triple-equals": true,
+      "no-string-literal": false,
+      "quotemark": [
+          true,
+          "double"
+      ],
+      "semicolon": [
+          true,
+          "always"
+      ]
+  },
+  "rulesDirectory": []
+}
