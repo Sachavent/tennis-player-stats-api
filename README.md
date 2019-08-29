@@ -11,19 +11,19 @@ You should have:
 - `npm run dev`
 
 ## Docker
-To build the image: `docker build -t tennis-player-stats-api .`
-To run the image: `docker run --name tennis-player-stats-api -e TERM=xterm -e NODE_ENV=dev -p 8001:3000 -d tennis-player-stats-api`
-To test it, you can use curl : `curl http://127.0.0.1:8001/players`
+- To build the image: `docker build -t tennis-player-stats-api .`
+- To run the image: `docker run --name tennis-player-stats-api -e TERM=xterm -e NODE_ENV=dev -p 8001:3000 -d tennis-player-stats-api`
+- To test it, you can use curl : `curl http://127.0.0.1:8001/players`
 
-## Tests
+## Tests
 To run tests:
 - Build and execute image Docker (refer to previous part)
 - `npm run test`
 
-## DOCUMENTATION
+## Documentation
 Will be generated later by a swagger
 
-## Parameters validation
+## Parameters validation
 To validate parameters, i'm using AJV: another json schema validation
 
 More documentation there : https://github.com/epoberezkin/ajv
