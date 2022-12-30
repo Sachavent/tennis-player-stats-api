@@ -45,7 +45,7 @@
     "chai": "^4.2.0",
     "chlg-cli": "^1.0.0",
     "husky": "^1.0.0-rc.10",
-    "mocha": "^6.2.0",
+    "mocha": "^10.2.0",
     "request": "^2.88.0",
     "tslint": "^5.10.0",
     "tslint-eslint-rules": "^5.3.1",
